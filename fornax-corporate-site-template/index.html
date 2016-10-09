@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sherry Luo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> 
+    
+    <!--Font-->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+    
+    
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+      
+      <!-- Fav and touch icons -->
+      <link rel="shortcut icon" href="ico/favicon.ico">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+
+
+      
+
+    <!-- SCRIPT 
+    ============================================================-->  
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 100
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+      
+  </head>
+  <body>
+  <!--HEADER ROW-->
+  <div id="header-row">
+    <div class="container">
+      <div class="row">
+              <!--LOGO-->
+              <div class="span3"><h1><a class="brand" href="#">Sherry Luo</a></h1></div>
+              <!-- /LOGO -->
+
+            <!-- MAIN NAVIGATION -->  
+              <div class="span9">
+                <div class="navbar  pull-right">
+                  <div class="navbar-inner">
+                    <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+                    <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        
+                        <!--<li class="dropdown">
+                          <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                  <li><a href="about.html">Company</a></li>
+                                  <li><a href="about.html">History</a></li>
+                                  <li><a href="about.html">Team</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>-->
+						
+						<li><a href="#scroll-program">Programs</a></li>
+						<li><a href="#scroll-artwork">Artwork</a></li>
+                 
+                    </ul>
+                  </div>
+
+                  </div>
+                </div>
+              </div>
+            <!-- MAIN NAVIGATION -->  
+      </div>
+    </div>
+  </div>
+  <!-- /HEADER ROW -->
+
+  
+
+
+  <div class="container">
+
+  <!--Carousel
+  ==================================================-->
+
+  <div id="myCarousel" class="carousel slide">
+    <div class="carousel-inner">
+
+      <div class="active item">
+        <div class="container">
+          <div class="row">
+            
+              <div class="span6">
+
+                <div class="carousel-caption">
+                      <h1>Programs</h1>
+                      <p class="lead">Below are some of the programs I worked on, either individually or in a team.</p>
+                      <a class="btn btn-large btn-primary" href="#scroll-program">View Programs</a>
+                </div>
+
+              </div>
+
+                <div class="span6 carousel-image"> <img src="img/Muses.png"></div>
+
+          </div>
+        </div>
+       
+
+
+
+      </div>
+
+      <div class="item">
+       
+        <div class="container">
+          <div class="row">
+            
+              <div class="span6">
+
+                <div class="carousel-caption">
+                      <h1>Artwork</h1>
+                      <p class="lead">I enjoy drawing or painting as a hobby. Below are some of the works I made.</p>
+                      <a class="btn btn-large btn-primary" href="#scroll-artwork">View Artwork</a>
+                </div>
+
+              </div>
+
+                <div class="span6 carousel-image"> <img src="img/Art3.png"></div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+    </div>
+       <!-- Carousel nav -->
+      <a class="carousel-control left " href="#myCarousel" data-slide="prev"><i class="icon-chevron-left"></i></a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next"><i class="icon-chevron-right"></i></a>
+        <!-- /.Carousel nav -->
+
+  </div>
+    <!-- /Carousel -->
+
+
+
+<div id="scroll-program"></div>
+ 
+
+<!-- Row View -->
+
+<div class="row feature-box">
+<div class="span12 cnt-title">
+       <h1>Programs</h1> 
+        <span>Below are some of the programs I worked on, either individually or in a team.</span>        
+      </div>
+    <div class="row extra-padding-bottom">
+        <div class="span6"><img class="extra-padding" src="img/Muses.png"></div>
+
+        <div class="span6">
+          <img class="hidden-phone extra-padding-little" src="img/MusesCode1.png" alt="">
+		  <img class="hidden-phone extra-padding-little" src="img/MusesCode2.png" alt="">
+		  <img class="hidden-phone extra-padding-little" src="img/MusesCode3.png" alt="">
+          <h1>Muses</h1>
+            <p>The website, Muses, allows users to upload advertisements or their artwork and sell them on the website. I worked with two other people to create this website for the FBLA E-Business event. I created the functionalities, such as the uploading function, the account system, and the search function.</p>
+             <a href="http://muses.hhsfbla.com">View Muses</a>
+        </div>
+    </div>
+	
+	<div class="row extra-padding-bottom">
+        <div class="span6"><img class="extra-padding-medium" src="img/Eclat.png"><img class="extra-padding-medium" src="img/Eclat2.png"></div>
+
+        <div class="span6">
+          <img class="hidden-phone extra-padding-little" src="img/EclatCode1.png" alt="">
+		  <img class="hidden-phone extra-padding-little" src="img/EclatCode2.png" alt="">
+		  <img class="hidden-phone extra-padding-little" src="img/EclatCode3.png" alt="">
+          <h1>Éclat</h1>
+            <p>The mobile application, Éclat, allows users to share images of their suits for an FBLA event so others can give them feedback. I worked with two other people to create this app for the FBLA Mobile Application Development competition. I helped connect the application template to the database.</p>
+             <!--<a href="#">Read More &rarr;</a>-->
+        </div>
+    </div>
+	
+	<div class="row extra-padding-bottom">
+        <div class="span6"><img class="extra-padding-medium" src="img/Fire.png"><img class="extra-padding-medium" src="img/Fire2.png"></div>
+
+        <div class="span6">
+          <img class="hidden-phone extra-padding-little" src="img/FireCode1.png" alt="">
+		  <img class="hidden-phone extra-padding-little" src="img/FireCode2.png" alt="">
+		  <img class="hidden-phone extra-padding-little" src="img/FireCode3.png" alt="">
+          <h1>Fire and Water</h1>
+            <p>The Java project, Fire and Water, is a traditional shooter game in which the user must kill off the "Fire Balls" before they kill the user's "Water Ball." I created this project for my final project in Introduction to Programming.</p>
+             <!--<a href="#">Read More &rarr;</a>-->
+        </div>
+    </div>
+</div>
+<!-- Feature 
+  ==============================================-->
+
+ <div class="hr-divider" id="scroll-artwork"></div>
+  <div class="row feature-box">
+      <div class="span12 cnt-title">
+       <h1>Artwork</h1> 
+        <span>I enjoy drawing or painting as a hobby. Below are some of the works I made.</span>        
+      </div>
+
+      <div class="span4">
+        <img src="img/Art3.png">
+        <h2>Name Design</h2>
+       <!-- <p>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+        </p>
+
+        <a href="#">Read More &rarr;</a>-->
+
+      </div>
+
+      <div class="span4">
+        <img src="img/Art2.png">
+        <h2>Girl with Flowers</h2>
+		<!--
+        <p>
+            Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. 
+        </p>   
+          <a href="#">Read More &rarr;</a> -->   
+      </div>
+
+      <div class="span4">
+        <img src="img/Art1.png">
+        <h2>Songbird</h2><!--
+        <p>
+            Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. 
+        </p>
+          <a href="#">Read More &rarr;</a>-->
+      </div>
+  </div>
+
+
+<!-- /.Feature -->
+    
+</div>
+
+
+<!-- /.Row View -->
+
+
+
+<!--Footer
+==========================-->
+
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="span6">Copyright &copy 2013 Sherry Luo | All Rights Reserved  <br>
+        <small> Used Shapebootstrap template.</small>
+        </div><!--
+        <div class="span6">
+            <div class="social pull-right">
+                <a href="#"><img src="img/social/googleplus.png" alt=""></a>
+                <a href="#"><img src="img/social/dribbble.png" alt=""></a>
+                <a href="#"><img src="img/social/twitter.png" alt=""></a>
+                <a href="#"><img src="img/social/dribbble.png" alt=""></a>
+                <a href="#"><img src="img/social/rss.png" alt=""></a>
+            </div>
+        </div>-->
+      </div>
+    </div>
+</footer>
+
+<!--/.Footer-->
+
+  </body>
+</html>
