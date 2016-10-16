@@ -65,6 +65,18 @@ $(document).ready(function(){
       
   </head>
   <body>
+  <!-- The Modal -->
+	<div id="myModal" class="modalImage">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  
+	</div>
+  
   <!--HEADER ROW-->
   <div id="header-row">
     <div class="container">
@@ -195,12 +207,12 @@ $(document).ready(function(){
         <span>Below are some of the programs I worked on, either individually or in a team.</span>        
       </div>
     <div class="row extra-padding-bottom">
-        <div class="span6"><img class="extra-padding" src="img/Muses.png"></div>
+        <div class="span6"><img class="extra-padding specialImage" src="img/Muses.png" onclick="displayModal(this.src)"></div>
 
         <div class="span6">
-          <img class="hidden-phone extra-padding-little" src="img/MusesCode1.png" alt="">
-		  <img class="hidden-phone extra-padding-little" src="img/MusesCode2.png" alt="">
-		  <img class="hidden-phone extra-padding-little" src="img/MusesCode3.png" alt="">
+          <img class="hidden-phone extra-padding-little specialImage" src="img/MusesCode1.png" onclick="displayModal(this.src)" alt="">
+		  <img class="hidden-phone extra-padding-little specialImage" src="img/MusesCode2.png" onclick="displayModal(this.src)" alt="">
+		  <img class="hidden-phone extra-padding-little specialImage" src="img/MusesCode3.png" onclick="displayModal(this.src)" alt="">
           <h1>Muses</h1>
             <p>The website, Muses, allows users to upload advertisements or their artwork and sell them on the website. I worked with two other people to create this website for the FBLA E-Business event. I created the functionalities, such as the uploading function, the account system, and the search function.</p>
              <a href="http://muses.hhsfbla.com">View Muses</a>
@@ -211,9 +223,9 @@ $(document).ready(function(){
         <div class="span6"><img class="extra-padding-medium" src="img/Eclat.png"><img class="extra-padding-medium" src="img/Eclat2.png"></div>
 
         <div class="span6">
-          <img class="hidden-phone extra-padding-little" src="img/EclatCode1.png" alt="">
-		  <img class="hidden-phone extra-padding-little" src="img/EclatCode2.png" alt="">
-		  <img class="hidden-phone extra-padding-little" src="img/EclatCode3.png" alt="">
+          <img class="hidden-phone extra-padding-little specialImage" src="img/EclatCode1.png" onclick="displayModal(this.src)" alt="">
+		  <img class="hidden-phone extra-padding-little specialImage" src="img/EclatCode2.png" onclick="displayModal(this.src)" alt="">
+		  <img class="hidden-phone extra-padding-little specialImage" src="img/EclatCode3.png" onclick="displayModal(this.src)" alt="">
           <h1>Éclat</h1>
             <p>The mobile application, Éclat, allows users to share images of their suits for an FBLA event so others can give them feedback. I worked with two other people to create this app for the FBLA Mobile Application Development competition. I helped connect the application template to the database.</p>
              <!--<a href="#">Read More &rarr;</a>-->
@@ -221,12 +233,12 @@ $(document).ready(function(){
     </div>
 	
 	<div class="row extra-padding-bottom">
-        <div class="span6"><img class="extra-padding-medium" src="img/Fire.png"><img class="extra-padding-medium" src="img/Fire2.png"></div>
+        <div class="span6"><img class="extra-padding-medium specialImage" src="img/Fire.png" onclick="displayModal(this.src)"><img class="extra-padding-medium specialImage" src="img/Fire2.png" onclick="displayModal(this.src)"></div>
 
         <div class="span6">
-          <img class="hidden-phone extra-padding-little" src="img/FireCode1.png" alt="">
-		  <img class="hidden-phone extra-padding-little" src="img/FireCode2.png" alt="">
-		  <img class="hidden-phone extra-padding-little" src="img/FireCode3.png" alt="">
+          <img class="hidden-phone extra-padding-little specialImage" src="img/FireCode1.png" onclick="displayModal(this.src)" alt="">
+		  <img class="hidden-phone extra-padding-little specialImage" src="img/FireCode2.png" onclick="displayModal(this.src)" alt="">
+		  <img class="hidden-phone extra-padding-little specialImage" src="img/FireCode3.png" onclick="displayModal(this.src)" alt="">
           <h1>Fire and Water</h1>
             <p>The Java project, Fire and Water, is a traditional shooter game in which the user must kill off the "Fire Balls" before they kill the user's "Water Ball." I created this project for my final project in Introduction to Programming.</p>
              <!--<a href="#">Read More &rarr;</a>-->
@@ -234,12 +246,12 @@ $(document).ready(function(){
     </div>
 	
 	<div class="row extra-padding-bottom">
-        <div class="span6"><img class="extra-padding" src="img/CSF.png"></div>
+        <div class="span6"><img class="extra-padding specialImage" src="img/CSF.png" onclick="displayModal(this.src)"></div>
 
         <div class="span6">
-          <img class="hidden-phone extra-padding-little" src="img/CSFCode1.png" alt="">
-		  <img class="hidden-phone extra-padding-little" src="img/CSFCode2.png" alt="">
-		  <img class="hidden-phone extra-padding-little" src="img/CSFCode3.png" alt="">
+          <img class="hidden-phone extra-padding-little specialImage" src="img/CSFCode1.png" onclick="displayModal(this.src)" alt="">
+		  <img class="hidden-phone extra-padding-little specialImage" src="img/CSFCode2.png" onclick="displayModal(this.src)" alt="">
+		  <img class="hidden-phone extra-padding-little specialImage" src="img/CSFCode3.png" onclick="displayModal(this.src)" alt="">
           <h1>Homestead CSF Website</h1>
             <p>The HHS CSF Website helps broadcast volunteer events and regulate the members' hours. AS the CSF Webmaster, I added multiple features, such as the waitlist feature, the officer tab, and the online application, and maintained the website by fixing the about officers page, correcting the members' hours, etc.</p>
              <a href="http://hhscsf.org">View HHS CSF</a>
@@ -257,7 +269,7 @@ $(document).ready(function(){
       </div>
 
       <div class="span4">
-        <img src="img/Art3.png">
+        <img src="img/Art3.png" class="specialImage" onclick="displayModal(this.src)">
         <h2>Name Design</h2>
        <!-- <p>
             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
@@ -279,7 +291,7 @@ $(document).ready(function(){
       </div>
 
       <div class="span4">
-        <img src="img/Art1.png">
+        <img src="img/Art1.png" class="specialImage" onclick="displayModal(this.src)">
         <h2>Songbird</h2><!--
         <p>
             Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. 
@@ -321,6 +333,33 @@ $(document).ready(function(){
 </footer>
 
 <!--/.Footer-->
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
 
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+//var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+//var captionText = document.getElementById("caption");
+/**img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}**/
+
+function displayModal(source){
+	modal.style.display = "block";
+    modalImg.src = source;
+   // captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
   </body>
 </html>
