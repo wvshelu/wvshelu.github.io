@@ -240,8 +240,9 @@ Carousel
 .modal-content {
     margin: auto;
     display: block;
-    width: 90%;
-    max-width: 900px;
+	max-width: 900px;
+    /**width: 90%;
+    max-width: 900px;*/
 }
 
 /* Caption of Modal Image */
