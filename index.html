@@ -9,18 +9,18 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet"> 
-    
+    <link href="css/style.css" rel="stylesheet">
+
     <!--Font-->
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
-    
-    
-    
+
+
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-      
+
       <!-- Fav and touch icons -->
       <link rel="shortcut icon" href="ico/favicon.ico">
       <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
@@ -29,13 +29,14 @@
       <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
 
 
-      
 
-    <!-- SCRIPT 
-    ============================================================-->  
+
+    <!-- SCRIPT
+    ============================================================-->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -54,7 +55,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top - 100
       }, 800, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -62,7 +63,7 @@ $(document).ready(function(){
   });
 });
 </script>
-      
+
   </head>
   <body>
   <!-- The Modal -->
@@ -74,9 +75,9 @@ $(document).ready(function(){
   <!-- Modal Content (The Image) -->
   <img class="modal-content" id="img01">
 
-  
+
 	</div>
-  
+
   <!--HEADER ROW-->
   <div id="header-row">
     <div class="container">
@@ -86,32 +87,32 @@ $(document).ready(function(){
               <div class="span3"><h1><a class="brand" href="#scroll-top">Sherry Luo</a></h1></div>
               <!-- /LOGO -->
 
-            <!-- MAIN NAVIGATION -->  
+            <!-- MAIN NAVIGATION -->
               <div class="span9">
                 <div class="navbar  pull-right">
                   <div class="navbar-inner">
                     <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
                     <div class="nav-collapse collapse navbar-responsive-collapse">
                     <ul class="nav">
-                       
-						
+
+
 						<li><a href="#scroll-program">Programs</a></li>
 						<li><a href="#scroll-artwork">Artwork</a></li>
 						<li><a href="#scroll-presentations">Presentations</a></li>
-                 
+
                     </ul>
                   </div>
 
                   </div>
                 </div>
               </div>
-            <!-- MAIN NAVIGATION -->  
+            <!-- MAIN NAVIGATION -->
       </div>
     </div>
   </div>
   <!-- /HEADER ROW -->
 
-  
+
 
 <div id="scroll-top"></div>
   <div class="container">
@@ -125,7 +126,7 @@ $(document).ready(function(){
       <div class="active item">
         <div class="container">
           <div class="row">
-            
+
               <div class="span6">
 
                 <div class="carousel-caption">
@@ -140,17 +141,17 @@ $(document).ready(function(){
 
           </div>
         </div>
-       
+
 
 
 
       </div>
 
       <div class="item">
-       
+
         <div class="container">
           <div class="row">
-            
+
               <div class="span6">
 
                 <div class="carousel-caption">
@@ -169,10 +170,10 @@ $(document).ready(function(){
       </div>
 
 	<div class="item">
-       
+
         <div class="container">
           <div class="row">
-            
+
               <div class="span6">
 
                 <div class="carousel-caption">
@@ -204,14 +205,14 @@ $(document).ready(function(){
 
 
 <div id="scroll-program"></div>
- 
+
 
 <!-- Row View -->
-
+<input onclick='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' />
 <div class="row feature-box">
 <div class="span12 cnt-title">
-       <h1>Programs</h1> 
-        <span>Below are some of the programs I worked on, either individually or in a team.</span>        
+       <h1>Programs</h1>
+        <span>Below are some of the programs I worked on, either individually or in a team.</span>
       </div>
     <div class="row extra-padding-bottom">
         <div class="span6"><img class="extra-padding specialImage" src="img/Muses.png" onclick="displayModal(this.src)"></div>
@@ -225,7 +226,7 @@ $(document).ready(function(){
              <a href="http://muses.hhsfbla.com">View Muses</a>
         </div>
     </div>
-	
+
 	<div class="row extra-padding-bottom">
         <div class="span6"><img class="extra-padding-medium specialImage" src="img/Shape1.PNG" onclick="displayModal(this.src)"><img class="extra-padding-medium specialImage" src="img/Shape2.PNG" onclick="displayModal(this.src)"></div>
 
@@ -238,7 +239,7 @@ $(document).ready(function(){
             <a href="https://github.com/kenasprec/Shape">View Github link</a>
         </div>
     </div>
-	
+
 	<div class="row extra-padding-bottom">
         <div class="span6"><img class="extra-padding-medium specialImage" src="img/Eclat.png" onclick="displayModal(this.src)"><img class="extra-padding-medium specialImage" src="img/Eclat2.png" onclick="displayModal(this.src)"></div>
 
@@ -251,7 +252,7 @@ $(document).ready(function(){
              <!--<a href="#">Read More &rarr;</a>-->
         </div>
     </div>
-	
+
 	<div class="row extra-padding-bottom">
         <div class="span6"><img class="extra-padding-medium specialImage" src="img/Fire.png" onclick="displayModal(this.src)"><img class="extra-padding-medium specialImage" src="img/Fire2.png" onclick="displayModal(this.src)"></div>
 
@@ -264,7 +265,7 @@ $(document).ready(function(){
              <!--<a href="#">Read More &rarr;</a>-->
         </div>
     </div>
-	
+
 	<div class="row extra-padding-bottom">
         <div class="span6"><img class="extra-padding specialImage" src="img/CSF.png" onclick="displayModal(this.src)"></div>
 
@@ -278,46 +279,46 @@ $(document).ready(function(){
         </div>
     </div>
 </div>
-<!-- Feature 
+<!-- Feature
   ==============================================-->
 
  <div class="hr-divider" id="scroll-artwork"></div>
   <div class="row feature-box">
       <div class="span12 cnt-title">
-       <h1>Artwork</h1> 
-        <span>I enjoy drawing or painting as a hobby. Below are some of the works I made.</span>        
+       <h1>Artwork</h1>
+        <span>I enjoy drawing or painting as a hobby. Below are some of the works I made.</span>
       </div>
 
       <div class="span4">
         <img src="img/Art3.png" class="specialImage" onclick="displayModal(this.src)">
         <h2>Name Design</h2>
-       
+
 
       </div>
 
       <div class="span4">
         <img src="img/Art2.png" class="specialImage" onclick="displayModal(this.src)">
         <h2>Girl with Flowers</h2>
-		
+
       </div>
 
       <div class="span4">
         <img src="img/Art1.png" class="specialImage" onclick="displayModal(this.src)">
         <h2>Songbird</h2>
 	  </div><!--
-        
+
       </div>
   </div>
 
 
 <!-- /.Feature -->
-    
+
 </div>
 <div class="hr-divider" id="scroll-presentations"></div>
   <div class="row feature-box">
       <div class="span12 cnt-title">
-       <h1>Presentations</h1> 
-        <span>I have created various Powerpoint presentations, one of which is shown here.</span>        
+       <h1>Presentations</h1>
+        <span>I have created various Powerpoint presentations, one of which is shown here.</span>
       </div>
 
       <div class="row extra-padding-bottom">
@@ -332,7 +333,7 @@ $(document).ready(function(){
              <a href="https://docs.google.com/presentation/d/1pQL1WCokUb6o2HeWqwAmLLDqb8XpkWLam1uFLfnM6jc/edit?usp=sharing">View Lucid powerpoint</a>
         </div>
     </div>
-    
+
 </div>
 </div>
 <!-- /.Row View -->
